@@ -59,6 +59,10 @@ You will be running your tests in one terminal and debugging in the other. As yo
 Edit the `ReadMe` file with your answers to the questions below.
 
 1. In your own words, define closure (1-2 sentences).
+
+  - Closure is the function inside of a function that references the lexical scope.
+
+
 2. Study the following code, then answer the questions below.
 
 ```js
@@ -75,13 +79,21 @@ const dansRoll = personalDice("Dan");
 const zoesRoll = personalDice("Zoe");
 
 
-dansRoll();
-dansRoll();
+console.log(dansRoll());
+console.log(dansRoll());
 ```
 
 a. Where is closure used in this code? How can you tell?
+
+- Lines 66-70. This is a closure because this is the child function being returned in the parent function.
+
 b. Compare and contrast calling `dansRoll` the first and second time. What is always the same? What could change?
+  - The name will be the same for each of the rolls. the number he roll can be different.
+
+
 c. What is the lexical scope of `newRoll`? 
+
+- It belongs to the closure.
 
 
 ### Task 3 - Stretch Goals
